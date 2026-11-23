@@ -1,0 +1,4 @@
+# Modo mantenimiento (lo cambia el ADMIN PANEL)
+maintenance: false
+# Recompensa diaria de PetCoins
+daily-reward: 50

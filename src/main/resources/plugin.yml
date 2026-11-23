@@ -1,0 +1,51 @@
+name: ServerSuite
+version: 1.0.0
+main: net.survival.suite.SuitePlugin
+api-version: '1.21'
+author: ServerTeam
+description: AdminPanel, CosmeticCraft y PETCRAFT en un solo plugin para Paper 1.21.1
+commands:
+  admin:
+    description: Abre el panel de administracion (/admin inv|ender <jugador> para inspeccionar)
+    usage: /admin [inv|ender <jugador>]
+    permission: adminpanel.use
+  cosmetics:
+    description: Abre el menu de cosmeticos
+    usage: /cosmetics
+  aura:
+    description: Gestiona las auras
+    usage: /aura [flame|heart|portal|soul|sparkle|off]
+  pets:
+    description: Abre tu coleccion de mascotas
+    usage: /pets
+  petshop:
+    description: Abre la tienda de mascotas
+    usage: /petshop
+  petcoins:
+    description: Consulta y gestiona tus PetCoins
+    usage: /petcoins [balance|daily|give|take]
+  pet:
+    description: Invoca, guarda o administra mascotas
+    usage: /pet <summon|remove|give>
+permissions:
+  adminpanel.use:
+    description: Permite abrir el panel de administracion
+    default: op
+  adminpanel.maintenance:
+    description: Permite activar o desactivar el mantenimiento
+    default: op
+  adminpanel.bypass:
+    description: Permite entrar durante el mantenimiento
+    default: op
+  adminpanel.inspect:
+    description: Permite ver el inventario y el cofre de Ender de otros jugadores
+    default: op
+  cosmeticcraft.use:
+    description: Permite utilizar cosmeticos
+    default: true
+  cosmeticcraft.admin:
+    description: Permite cambiar el aura mediante comando
+    default: op
+  petcraft.admin:
+    description: Permite administrar PETCRAFT
+    default: op
